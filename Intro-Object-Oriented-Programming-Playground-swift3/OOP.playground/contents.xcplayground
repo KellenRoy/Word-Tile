@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='osx' display-mode='rendered' last-migration='0800'>
+    <pages>
+        <page name='P1-Introduction'/>
+        <page name='P2-Favorite Foods'/>
+        <page name='P3-Classes'/>
+        <page name='P4-Bears'/>
+        <page name='P5-Inheritance'/>
+        <page name='P6-More Animals'/>
+        <page name='P7-Zookeeper'/>
+        <page name='P8-Static Fields'/>
+    </pages>
+</playground>

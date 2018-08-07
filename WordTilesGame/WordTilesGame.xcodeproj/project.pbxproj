@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55BA0905210F966900AFBD13 /* difficultyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BA0904210F966900AFBD13 /* difficultyController.swift */; };
+		55BA0907210FBFC500AFBD13 /* endScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BA0906210FBFC500AFBD13 /* endScreenController.swift */; };
+		55C0A5152106465700F65513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0A5142106465700F65513 /* AppDelegate.swift */; };
+		55C0A5172106465700F65513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0A5162106465700F65513 /* ViewController.swift */; };
+		55C0A51A2106465700F65513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C0A5182106465700F65513 /* Main.storyboard */; };
+		55C0A51D2106465700F65513 /* WordTilesGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55C0A51B2106465700F65513 /* WordTilesGame.xcdatamodeld */; };
+		55C0A51F2106466F00F65513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C0A51E2106466F00F65513 /* Assets.xcassets */; };
+		55C0A5222106467000F65513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C0A5202106467000F65513 /* LaunchScreen.storyboard */; };
+		55C0A52C2107980F00F65513 /* GameScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C0A52B2107980F00F65513 /* GameScreenController.swift */; };
+		B438CC8E1DB4DD8FD9B90D9F /* Pods_WordTilesGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A0FF8C1235F58E35FE40CD /* Pods_WordTilesGame.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02A0FF8C1235F58E35FE40CD /* Pods_WordTilesGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordTilesGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49DD16D2A11EEFEDB7706797 /* Pods-WordTilesGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordTilesGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordTilesGame/Pods-WordTilesGame.release.xcconfig"; sourceTree = "<group>"; };
+		55BA0904210F966900AFBD13 /* difficultyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = difficultyController.swift; sourceTree = "<group>"; };
+		55BA0906210FBFC500AFBD13 /* endScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endScreenController.swift; sourceTree = "<group>"; };
+		55C0A5112106465700F65513 /* WordTilesGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordTilesGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C0A5142106465700F65513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55C0A5162106465700F65513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55C0A5192106465700F65513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55C0A51C2106465700F65513 /* WordTilesGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordTilesGame.xcdatamodel; sourceTree = "<group>"; };
+		55C0A51E2106466F00F65513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55C0A5212106467000F65513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55C0A5232106467000F65513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C0A52B2107980F00F65513 /* GameScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenController.swift; sourceTree = "<group>"; };
+		9D19ACCBDAE2E3C0A0678C54 /* Pods-WordTilesGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordTilesGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordTilesGame/Pods-WordTilesGame.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55C0A50E2106465700F65513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B438CC8E1DB4DD8FD9B90D9F /* Pods_WordTilesGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03426D16B4AD5FFD966D0ED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02A0FF8C1235F58E35FE40CD /* Pods_WordTilesGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55C0A5082106465700F65513 = {
+			isa = PBXGroup;
+			children = (
+				55C0A5132106465700F65513 /* WordTilesGame */,
+				55C0A5122106465700F65513 /* Products */,
+				C7B40C276DA27F0113526A39 /* Pods */,
+				03426D16B4AD5FFD966D0ED1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		55C0A5122106465700F65513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55C0A5112106465700F65513 /* WordTilesGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55C0A5132106465700F65513 /* WordTilesGame */ = {
+			isa = PBXGroup;
+			children = (
+				55C0A5292106468000F65513 /* Swift Files */,
+				55C0A52A210646A200F65513 /* Storyboards */,
+				55C0A51E2106466F00F65513 /* Assets.xcassets */,
+				55C0A5232106467000F65513 /* Info.plist */,
+				55C0A51B2106465700F65513 /* WordTilesGame.xcdatamodeld */,
+			);
+			path = WordTilesGame;
+			sourceTree = "<group>";
+		};
+		55C0A5292106468000F65513 /* Swift Files */ = {
+			isa = PBXGroup;
+			children = (
+				55C0A5142106465700F65513 /* AppDelegate.swift */,
+				55C0A5162106465700F65513 /* ViewController.swift */,
+				55C0A52B2107980F00F65513 /* GameScreenController.swift */,
+				55BA0904210F966900AFBD13 /* difficultyController.swift */,
+				55BA0906210FBFC500AFBD13 /* endScreenController.swift */,
+			);
+			path = "Swift Files";
+			sourceTree = "<group>";
+		};
+		55C0A52A210646A200F65513 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				55C0A5182106465700F65513 /* Main.storyboard */,
+				55C0A5202106467000F65513 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C7B40C276DA27F0113526A39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D19ACCBDAE2E3C0A0678C54 /* Pods-WordTilesGame.debug.xcconfig */,
+				49DD16D2A11EEFEDB7706797 /* Pods-WordTilesGame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55C0A5102106465700F65513 /* WordTilesGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C0A5262106467000F65513 /* Build configuration list for PBXNativeTarget "WordTilesGame" */;
+			buildPhases = (
+				5209E11D8E5AC5856FEBB26C /* [CP] Check Pods Manifest.lock */,
+				55C0A50D2106465700F65513 /* Sources */,
+				55C0A50E2106465700F65513 /* Frameworks */,
+				55C0A50F2106465700F65513 /* Resources */,
+				8BAA0288E14E855A3470AB95 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordTilesGame;
+			productName = WordTilesGame;
+			productReference = 55C0A5112106465700F65513 /* WordTilesGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55C0A5092106465700F65513 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Make School";
+				TargetAttributes = {
+					55C0A5102106465700F65513 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 55C0A50C2106465700F65513 /* Build configuration list for PBXProject "WordTilesGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55C0A5082106465700F65513;
+			productRefGroup = 55C0A5122106465700F65513 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55C0A5102106465700F65513 /* WordTilesGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55C0A50F2106465700F65513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C0A5222106467000F65513 /* LaunchScreen.storyboard in Resources */,
+				55C0A51F2106466F00F65513 /* Assets.xcassets in Resources */,
+				55C0A51A2106465700F65513 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5209E11D8E5AC5856FEBB26C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordTilesGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BAA0288E14E855A3470AB95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WordTilesGame/Pods-WordTilesGame-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordTilesGame/Pods-WordTilesGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55C0A50D2106465700F65513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55BA0905210F966900AFBD13 /* difficultyController.swift in Sources */,
+				55BA0907210FBFC500AFBD13 /* endScreenController.swift in Sources */,
+				55C0A5172106465700F65513 /* ViewController.swift in Sources */,
+				55C0A52C2107980F00F65513 /* GameScreenController.swift in Sources */,
+				55C0A5152106465700F65513 /* AppDelegate.swift in Sources */,
+				55C0A51D2106465700F65513 /* WordTilesGame.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55C0A5182106465700F65513 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55C0A5192106465700F65513 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55C0A5202106467000F65513 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55C0A5212106467000F65513 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55C0A5242106467000F65513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55C0A5252106467000F65513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55C0A5272106467000F65513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D19ACCBDAE2E3C0A0678C54 /* Pods-WordTilesGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9M6JVD97KP;
+				INFOPLIST_FILE = WordTilesGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kellenroy.WordTilesGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55C0A5282106467000F65513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DD16D2A11EEFEDB7706797 /* Pods-WordTilesGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9M6JVD97KP;
+				INFOPLIST_FILE = WordTilesGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kellenroy.WordTilesGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55C0A50C2106465700F65513 /* Build configuration list for PBXProject "WordTilesGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C0A5242106467000F65513 /* Debug */,
+				55C0A5252106467000F65513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C0A5262106467000F65513 /* Build configuration list for PBXNativeTarget "WordTilesGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C0A5272106467000F65513 /* Debug */,
+				55C0A5282106467000F65513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		55C0A51B2106465700F65513 /* WordTilesGame.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				55C0A51C2106465700F65513 /* WordTilesGame.xcdatamodel */,
+			);
+			currentVersion = 55C0A51C2106465700F65513 /* WordTilesGame.xcdatamodel */;
+			path = WordTilesGame.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 55C0A5092106465700F65513 /* Project object */;
+}

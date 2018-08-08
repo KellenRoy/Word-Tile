@@ -16,34 +16,38 @@ class endScreenController: UIViewController {
     
     var finalWord: String = ""
     var difficulty = ""
-    var isRealWord: Bool = false
+    var isRealWord: Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("\" \(finalWord) \"")
         if finalWord == "Word" {
             finalWord = ""
-        }
-        if finalWord == "" {
             endWordLabel.text = "No Answer"
             wordLengthLabel.text = "You didn't submit an answer"
         }
-        else if finalWord != "" && isRealWord == false {
+        if finalWord == "" || finalWord.count == 0 {
+            endWordLabel.text = "No Answer"
+            wordLengthLabel.text = "You didn't submit an answer"
+        }
+         if finalWord != "" && isRealWord == false {
             endWordLabel.text = "Your word is \(finalWord)"
             wordLengthLabel.text = "This is not a real word! Try to submit a real one next time."
         }
-        else if finalWord.count == 1 {
-            endWordLabel.text = "Your word is \(finalWord)"
-            wordLengthLabel.text = "You made a word \(finalWord.count) letter long on \(difficulty) difficulty!"
-        }
-        else if isRealWord == true {
+         if isRealWord == true && finalWord != "" {
         endWordLabel.text = "Your word is \(finalWord)"
         wordLengthLabel.text = "You made a word \(finalWord.count) letters long on \(difficulty) difficulty!"
         }
-        else {
+        if isRealWord == true && difficulty == "difficult" && finalWord != "" {
             endWordLabel.text = "Your word is \(finalWord)"
             wordLengthLabel.text = "You made a word \(finalWord.count) letters long on hard difficulty!"
         print(isRealWord)
             }
+        if  finalWord != "" && finalWord  == "A" || finalWord == "I" {
+            endWordLabel.text = "Your word is \(finalWord)"
+            wordLengthLabel.text = "You made a word \(finalWord.count) letter long on \(difficulty) difficulty!"
+        }
+
         }
     
     override func didReceiveMemoryWarning() {

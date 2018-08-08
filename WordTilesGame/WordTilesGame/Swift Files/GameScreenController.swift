@@ -286,6 +286,7 @@ class GameController: UIViewController {
             print(isRealWord)
             destination.finalWord = wordLabel.text!
             destination.difficulty = difficulty
+            destination.isRealWord = isRealWord
         }
         
     }
@@ -359,9 +360,12 @@ class GameController: UIViewController {
     func checkIfRealWord() -> Bool {
 
         if UIReferenceLibraryViewController.dictionaryHasDefinition(forTerm: wordLabel.text!) {
+            print(wordLabel.text!)
+            print("aaaaaaaaaaaaa")
           return true
         }
-        
+        print(wordLabel.text!)
+        print("bbbbbbbbbbbbbb")
         return false
     }
     

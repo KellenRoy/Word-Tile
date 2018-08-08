@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -95,15 +94,18 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNc-XK-evp">
                                                 <rect key="frame" x="162.5" y="0.0" width="142.5" height="130"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-pL-FbW">
-                                                        <rect key="frame" x="50.5" y="29.5" width="34" height="72"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-pL-FbW">
+                                                        <rect key="frame" x="54.5" y="29" width="33.5" height="72"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="0.7758789062" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="t8S-pL-FbW" firstAttribute="centerX" secondItem="WNc-XK-evp" secondAttribute="centerX" id="E4w-Km-7mX"/>
+                                                    <constraint firstItem="t8S-pL-FbW" firstAttribute="centerY" secondItem="WNc-XK-evp" secondAttribute="centerY" id="cVX-Vj-oEi"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
@@ -162,16 +164,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try to create the longest word possible using the given letters!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ho-9b-8W2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try to create the longest word possible using the given letters!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ho-9b-8W2">
                                 <rect key="frame" x="16" y="20" width="343" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can only use each letter once" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yt-CS-bpx">
-                                <rect key="frame" x="8" y="149" width="358" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="xye-ry-NKG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -192,12 +189,24 @@
                                     <segue destination="uZv-Ab-bJL" kind="unwind" unwindAction="unwindWithSegue:" id="pXr-TV-8NM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can only use each letter once, but you can refresh as much as you want!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yt-CS-bpx">
+                                <rect key="frame" x="16" y="241" width="343" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="O8d-aZ-Jrv" firstAttribute="trailing" secondItem="f7v-D8-CfQ" secondAttribute="trailing" constant="15" id="CPs-QQ-rIJ"/>
                             <constraint firstItem="O8d-aZ-Jrv" firstAttribute="bottom" secondItem="f7v-D8-CfQ" secondAttribute="bottom" constant="15" id="EaV-UD-amE"/>
                             <constraint firstItem="f7v-D8-CfQ" firstAttribute="leading" secondItem="O8d-aZ-Jrv" secondAttribute="leading" constant="15" id="LCZ-ZW-LsM"/>
+                            <constraint firstItem="O8d-aZ-Jrv" firstAttribute="trailing" secondItem="4Yt-CS-bpx" secondAttribute="trailing" constant="16" id="Oll-4g-FdE"/>
+                            <constraint firstItem="5ho-9b-8W2" firstAttribute="trailing" secondItem="4Yt-CS-bpx" secondAttribute="trailing" id="QVl-bc-Pky"/>
+                            <constraint firstItem="5ho-9b-8W2" firstAttribute="top" secondItem="O8d-aZ-Jrv" secondAttribute="top" id="SCp-T6-ke8"/>
+                            <constraint firstItem="4Yt-CS-bpx" firstAttribute="leading" secondItem="O8d-aZ-Jrv" secondAttribute="leading" constant="16" id="WWr-E3-u3l"/>
+                            <constraint firstItem="5ho-9b-8W2" firstAttribute="leading" secondItem="4Yt-CS-bpx" secondAttribute="leading" id="jjB-3d-jxb"/>
+                            <constraint firstItem="4Yt-CS-bpx" firstAttribute="top" secondItem="5ho-9b-8W2" secondAttribute="bottom" constant="100" id="zog-xU-k6g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O8d-aZ-Jrv"/>
                     </view>
@@ -242,11 +251,10 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BzS-dX-fQd">
                                         <rect key="frame" x="0.0" y="0.0" width="365" height="83.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgV-d5-rGq">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="900" verticalCompressionResistancePriority="900" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgV-d5-rGq">
                                                 <rect key="frame" x="0.0" y="0.0" width="84" height="83.5"/>
                                                 <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <inset key="contentEdgeInsets" minX="37" minY="35" maxX="37" maxY="35"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -552,13 +560,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Word Was # Letters Long" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhA-95-2wm">
-                                <rect key="frame" x="15" y="135" width="345" height="24"/>
+                                <rect key="frame" x="15" y="160" width="345" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Your Word)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMF-RF-hsf">
-                                <rect key="frame" x="15" y="234" width="345" height="36"/>
+                                <rect key="frame" x="15" y="259" width="345" height="100"/>
+                                <color key="backgroundColor" name="tcSeafoamGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="DlX-Ed-U3U"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -568,7 +580,7 @@
                         <constraints>
                             <constraint firstItem="dhA-95-2wm" firstAttribute="leading" secondItem="JkY-i4-J6E" secondAttribute="leading" constant="15" id="82y-Rt-JIl"/>
                             <constraint firstItem="5F9-aJ-HsB" firstAttribute="leading" secondItem="JkY-i4-J6E" secondAttribute="leading" constant="15" id="Csi-Y5-azC"/>
-                            <constraint firstItem="dhA-95-2wm" firstAttribute="top" secondItem="XRf-Ov-Wmm" secondAttribute="bottom" constant="25" id="Fva-Pl-P0u"/>
+                            <constraint firstItem="dhA-95-2wm" firstAttribute="top" secondItem="XRf-Ov-Wmm" secondAttribute="bottom" constant="50" id="Fva-Pl-P0u"/>
                             <constraint firstItem="JkY-i4-J6E" firstAttribute="trailing" secondItem="XRf-Ov-Wmm" secondAttribute="trailing" constant="15" id="IcS-aZ-3c2"/>
                             <constraint firstItem="iMF-RF-hsf" firstAttribute="top" secondItem="dhA-95-2wm" secondAttribute="bottom" constant="75" id="M4h-ov-OVo"/>
                             <constraint firstItem="JkY-i4-J6E" firstAttribute="trailing" secondItem="iMF-RF-hsf" secondAttribute="trailing" constant="15" id="Yjs-RL-bdg"/>
@@ -722,8 +734,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="djx-Eb-oNH"/>
-        <segue reference="LHL-mO-kwJ"/>
+        <segue reference="DQS-Zr-H3i"/>
         <segue reference="zRf-GK-OsU"/>
     </inferredMetricsTieBreakers>
 </document>
